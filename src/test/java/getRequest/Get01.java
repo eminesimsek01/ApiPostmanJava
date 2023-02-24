@@ -3,9 +3,7 @@ package getRequest;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import org.testng.annotations.Test;
-
 import static io.restassured.RestAssured.given;
-
 public class Get01 {
 /*
     Given
@@ -18,7 +16,6 @@ public class Get01 {
         Content Type ın "application/json" olduğunu assert et
     And
         Status Line "HTTP/1.1 200 OK" olduğunu assert et.
-
      */
     @Test // It is like the main method
      public void get01() {
@@ -31,23 +28,17 @@ public class Get01 {
 
         4)Assertion İşlemi
          */
-
-
         //Step 1: Url'i set ediniz.
         String url=" https://restful-booker.herokuapp.com/booking/781";
 
         //Step2: Expected dataları set et. (Ignore edilmiştir)
 
-
         //Step3:Request Gönder
-
         Response response=given().
                 when().
                 get(url);
-
         System.out.println("RESPONSE");
         response.prettyPrint();//prettyPrint() syso gibidir.
-
         /*
         Then
         Status Code un "200" olduğunu Assert et
@@ -55,7 +46,6 @@ public class Get01 {
         Content Type ın "application/json" olduğunu assert et
     And
         Status Line "HTTP/1.1 200 OK" olduğunu assert et.
-
          */
         //Test1: status code=--->200
         response.then().assertThat().statusCode(200);//Doc. test caseden alınmıştır
@@ -82,8 +72,4 @@ public class Get01 {
         //Headersları konsola nasıl yazdırabiliriz.,
         System.out.println("response.getHeaders() = " + response.getHeaders());
     }
-
-
-
-
 }
