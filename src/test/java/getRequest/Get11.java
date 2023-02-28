@@ -80,5 +80,7 @@ public class Get11 extends ApiZipopotamBaseURL {
         assertEquals(zippoPotamPojos.getCountryAbbreviation(),actualDataMap.get("country abbreviation"));
         assertEquals(zippoPotamPojos.getZippoPotamPlaces().getPlaceName(),
                 (((Map)((List)actualDataMap.get("places")).get(0))).get("place name"));
+        assertEquals(zippoPotamPojos.getZippoPotamPlaces().getLatitude(),
+                (((Map)((List)actualDataMap.get("places")).get(0)).get("latitude")));
     }
 }
