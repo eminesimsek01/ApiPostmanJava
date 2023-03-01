@@ -63,7 +63,7 @@ public class Get11 extends ApiZipopotamBaseURL {
         ZippoPotamPojos zippoPotamPojos = new ZippoPotamPojos("34010","Turkey","TR",zippoPotamPlaces);
         System.out.println("Expected Data: " + zippoPotamPojos);
 
-        //Step 3: Send a Request
+        //Step 3: Send a Request //Talep gönder
         Response response = given().spec(specification).when().
                 get("/{countryPath}/{postCodePath}");
 /*
@@ -71,16 +71,16 @@ public class Get11 extends ApiZipopotamBaseURL {
         response.prettyPrint();
  */
 
-        //Step 4: Assertion with GSON
+        //Step 4: Assertion with GSON // json objesini java objesine çevirmek için kullanılır
         Map<String,Object> actualDataMap = response.as(HashMap.class);
         System.out.println("Actual Data: " + actualDataMap);
         // get("Key")
         assertEquals(zippoPotamPojos.getCountry(),actualDataMap.get("country"));
         assertEquals(zippoPotamPojos.getPostCode(),actualDataMap.get("post code"));
         assertEquals(zippoPotamPojos.getCountryAbbreviation(),actualDataMap.get("country abbreviation"));
-        assertEquals(zippoPotamPojos.getZippoPotamPlaces().getPlaceName(),
-                (((Map)((List)actualDataMap.get("places")).get(0))).get("place name"));
+        assertEquals(zippoPotamPojos.getZippoPotamPlaces().getPlaceName(),(((Map)((List) actualDataMap.get("places")).get(0))).get("place name"));
         assertEquals(zippoPotamPojos.getZippoPotamPlaces().getLatitude(),
                 (((Map)((List)actualDataMap.get("places")).get(0)).get("latitude")));
+
     }
 }

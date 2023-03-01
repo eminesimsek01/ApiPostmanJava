@@ -25,10 +25,11 @@ public class ZippoPotamPojos {
     private ZippoPotamPlaces zippoPotamPlaces;
 
         //Step 2: Create a without paramter Constructor
+
+
     public ZippoPotamPojos() {
     }
 
-        //Step 3: Create a with paramter Constructor
     public ZippoPotamPojos(String postCode, String country, String countryAbbreviation, ZippoPotamPlaces zippoPotamPlaces) {
         this.postCode = postCode;
         this.country = country;
@@ -36,33 +37,38 @@ public class ZippoPotamPojos {
         this.zippoPotamPlaces = zippoPotamPlaces;
     }
 
-        //Step 4: Getter and Setter
     public String getPostCode() {
         return postCode;
     }
+
     public void setPostCode(String postCode) {
         this.postCode = postCode;
     }
+
     public String getCountry() {
         return country;
     }
+
     public void setCountry(String country) {
         this.country = country;
     }
+
     public String getCountryAbbreviation() {
         return countryAbbreviation;
     }
+
     public void setCountryAbbreviation(String countryAbbreviation) {
         this.countryAbbreviation = countryAbbreviation;
     }
+
     public ZippoPotamPlaces getZippoPotamPlaces() {
         return zippoPotamPlaces;
     }
+
     public void setZippoPotamPlaces(ZippoPotamPlaces zippoPotamPlaces) {
         this.zippoPotamPlaces = zippoPotamPlaces;
     }
 
-        //Step 5: toString()
     @Override
     public String toString() {
         return "ZippoPotamPojos{" +
