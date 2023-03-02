@@ -4,7 +4,7 @@ import baseUrls.DummyRestApiBaseURL;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import org.junit.Test;
-import pojoData.DummyResTApiExPojo;
+import pojoData.DummyRestApiExPojo;
 import pojoData.DummyRestApiPojo;
 import static io.restassured.RestAssured.given;
 import static org.junit.Assert.assertEquals;
@@ -76,7 +76,7 @@ public class Post03 extends DummyRestApiBaseURL {
 }
          */
 
-        DummyResTApiExPojo dummyResTApiExPojo = new DummyResTApiExPojo("success",dummyRestApiPojo,"Successfully! Record has been added.");
+        DummyRestApiExPojo dummyResTApiExPojo = new DummyRestApiExPojo("success",dummyRestApiPojo,"Successfully! Record has been added.");
 
 
 
@@ -101,7 +101,7 @@ public class Post03 extends DummyRestApiBaseURL {
 
         //Step 4: Assertion İşlemi:
 
-        DummyResTApiExPojo actualData = response.as(DummyResTApiExPojo.class);
+        DummyRestApiExPojo actualData = response.as(DummyRestApiExPojo.class);
         System.out.println("Actual Data: " + actualData);
 
         assertEquals(dummyResTApiExPojo.getStatus(),actualData.getStatus());
