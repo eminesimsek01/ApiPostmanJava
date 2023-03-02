@@ -33,7 +33,8 @@ public class Get12 extends GoRest {
         specifications.pathParams("usersPath", "users", "idPath", "702440");
 
         //Step 2: Set Expected Data
-        String expectedData = "{\n" +
+        String expectedData = "" +
+                "{\n" +
                 "    \"id\": 702440,\n" +
                 "    \"name\": \"Adheesh Chopra\",\n" +
                 "    \"email\": \"adheesh_chopra@schamberger-langosh.biz\",\n" +

@@ -35,11 +35,11 @@ public class Get13 extends GoRest {
                 "ahuja_shivakari@mcglynn.io","male","inactive");
         /*
         {
-"id": 723287,
-"name": "Shivakari Ahuja",
-"email": "ahuja_shivakari@mcglynn.io",
-"gender": "male",
-"status": "inactive"
+    "id": 723287,
+    "name": "Shivakari Ahuja",
+    "email": "ahuja_shivakari@mcglynn.io",
+    "gender": "male",
+    "status": "inactive"
         }
          */
         System.out.println("GoRestCoAPİ: " + goRestCoApiPojo);
