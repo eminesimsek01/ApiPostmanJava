@@ -43,5 +43,29 @@ import java.util.Map;
             expectedDataList.add(expectedDataMapAges);
             return expectedDataList;
         }
+        /*
+        {
+            "status": "success",
+                "data": "719",
+                "message": "Successfully! Record has been deleted"
+        }
+        */
+         /*
+    {
+    "status": "success",
+    "data": "719",
+    "message": "Successfully! Record has been deleted"
+}
+     */
+
+        public HashMap<String,String> setExpectedDataForDelete(String status,String data,String message){
+
+            HashMap<String,String> expectedData = new HashMap<>();
+            expectedData.put("status",status);
+            expectedData.put("data",data);
+            expectedData.put("message",message);
+
+            return expectedData;
+        }
     }
 

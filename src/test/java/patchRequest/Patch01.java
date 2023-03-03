@@ -1,5 +1,5 @@
 
-    package patchRequest;
+package patchRequest;
 
 
 import baseUrls.RestFullBookerHerOkuAppBaseURL;
@@ -7,12 +7,10 @@ import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import org.junit.Test;
 import utilities.JsonToJava;
-
-        import java.io.File;
+import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
-
-        import static io.restassured.RestAssured.given;
+import static io.restassured.RestAssured.given;
 import static org.junit.Assert.assertEquals;
 
     public class Patch01 extends RestFullBookerHerOkuAppBaseURL {
