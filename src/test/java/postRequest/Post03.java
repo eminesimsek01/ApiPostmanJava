@@ -4,8 +4,8 @@ import baseUrls.DummyRestApiBaseURL;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import org.junit.Test;
-import pojoData.DummyRestApiExPojo;
-import pojoData.DummyRestApiPojo;
+import pojoDatas.DummyRestApiExPojo;
+import pojoDatas.DummyRestApiPojo;
 import static io.restassured.RestAssured.given;
 import static org.junit.Assert.assertEquals;
 public class Post03 extends DummyRestApiBaseURL {

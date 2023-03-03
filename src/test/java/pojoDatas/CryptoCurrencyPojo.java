@@ -1,4 +1,4 @@
-package pojoData;
+package pojoDatas;
 public class CryptoCurrencyPojo {
 
     /*

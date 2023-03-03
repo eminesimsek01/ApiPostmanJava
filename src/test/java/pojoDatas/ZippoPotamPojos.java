@@ -1,4 +1,4 @@
-package pojoData;
+package pojoDatas;
 
 public class ZippoPotamPojos {
         //Step 2: Set Expected Data

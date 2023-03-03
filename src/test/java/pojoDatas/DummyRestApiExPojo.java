@@ -1,4 +1,4 @@
-package pojoData;
+package pojoDatas;
 import org.codehaus.jackson.annotate.JsonIgnoreProperties;
 
 @JsonIgnoreProperties(ignoreUnknown = true)  //org.codehaus.jackson.map.exc.UnrecognizedPropertyException: Unrecognized field "data" (Class pojoDatas.DummyResTApiReqPojo), not marked as ignorable

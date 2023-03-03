@@ -3,7 +3,7 @@ package getRequest;
 import baseUrls.GoRest;
 import io.restassured.response.Response;
 import org.junit.Test;
-import pojoData.GoRestCoApiPojo;
+import pojoDatas.GoRestCoApiPojo;
 import static io.restassured.RestAssured.given;
 import static org.junit.Assert.assertEquals;
 public class Get13 extends GoRest {

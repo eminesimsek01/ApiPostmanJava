@@ -2,7 +2,7 @@ package getRequest;
 import baseUrls.SwapiApiBaseUrl;
 import io.restassured.response.Response;
 import org.junit.Test;
-import pojoData.SwapiApiPojos;
+import pojoDatas.SwapiApiPojos;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
